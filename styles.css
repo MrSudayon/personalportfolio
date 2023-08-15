@@ -142,8 +142,8 @@ section img {
 .sec {
     position: absolute;
     overflow-y: hidden;
-    padding: 0 15vh;
-    background: linear-gradient(rgb(128, 74, 0), #C8AE7D, #EAC696);
+    z-index: 1;
+    background: linear-gradient(rgb(128, 74, 0), #C8AE7D, #C8AE7D, #EAC696);
 }
 .sec h1::first-letter {
     color: rgb(128, 74, 0);
@@ -151,9 +151,11 @@ section img {
 }
 .sec p {
     font-size: 1.2em;
+    margin-top: 10px;
+    padding: 5px 15vh;
     color: black;
     word-break: keep-all;
-    text-justify: auto;
+    text-align: center !important;
 }
 
 .hidden {
@@ -180,26 +182,58 @@ section img {
     font-size: 40px;
     text-align: center;
     -webkit-text-stroke: 1px black;
+    z-index: 2;
 }
 .socials {
-    padding: 0 20vh;
+    padding: 5vh 10vh 0 10vh;
     display: flex;
+    z-index: 2;
 }
 .socials:nth-child(2) {
     transition-delay: 200ms;
 }
 .socials:nth-child(3) {
-    transition-delay: 400ms;
+    transition-delay: 500ms;
 }
-.socials:nth-child(3) {
-    transition-delay: 600ms;
+.socials:nth-child(4) {
+    transition-delay: 800ms;
 }
 .social {
-    border: 1px solid;
     margin: 2vh 5vh;
     transition: .5s;
     filter: grayscale(1);
 }
 .social:hover {
     filter: grayscale(0);
+}
+
+footer {
+    font-size: 12px;
+    padding: 10px 0;
+    text-align: center;
+}
+footer p {
+    color: white;
+}
+
+.giff {
+    z-index: 1;
+
+    mix-blend-mode: screen;
+    position: absolute;
+    opacity: .5;
+    top: 20%;
+}
+.content .gif {
+    display: grid;
+    place-content: center;
+    padding: 10px 0;
+}
+.content .gifs {
+    min-height: 100vh;
+    height: 100%;
+    background-color: rgb(128, 74, 0);
+    padding: 5vh 0;
+    width: 100%;
+    border: 1px solid white;
 }
