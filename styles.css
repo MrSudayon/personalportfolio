@@ -350,7 +350,7 @@ footer {
 footer p {
     color: white;
 }
-@media (max-width: 550px) and (min-width: 400px) {
+@media (max-width: 550px) {
     header {
         padding: 2vh 0;
     }
@@ -421,7 +421,7 @@ footer p {
         padding: 5px 5px;
     }
     .social {
-        margin: 1vh 10px;
+        margin: 1vh 8px;
     }
     .social img {
         height: 50px;
