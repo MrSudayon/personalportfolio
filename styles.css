@@ -157,6 +157,7 @@ section img {
 .sec {
     position: absolute;
     overflow-y: hidden;
+    padding: 0 20vh;
     z-index: 1;
     background: linear-gradient(rgb(128, 74, 0), #C8AE7D, #C8AE7D, #EAC696);
 }
@@ -173,11 +174,10 @@ section img {
     word-break: keep-all;
 }
 
-
 .socials {
-    padding: 5vh 50vh;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     z-index: 2;
 }
 .socials:nth-child(2) {
@@ -190,10 +190,11 @@ section img {
     transition-delay: 800ms;
 }
 .socials img {
-    height: 90px; 
+    height: 90px;
     width: 90px;
 }
 .social {
+    margin: 0 5vh;
     transition: .5s;
     filter: grayscale(1);
 }
@@ -348,7 +349,7 @@ footer {
 footer p {
     color: white;
 }
-@media (max-width: 550px) {
+@media (max-width:450px) and (min-width: 250px){
     header {
         padding: 2vh 0;
     }
@@ -414,12 +415,21 @@ footer p {
         margin-top: 140px;
     }
 
-
+    .sec {
+        padding: 0 1vh;
+    }
     .sec p {
         padding: 5px 5px;
     }
+ 
     .socials {
-        padding: 5vh 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        z-index: 2;
+    }
+    .social {
+        margin: 0 1vh;
     }
     .social img {
         height: 70px;
@@ -466,7 +476,7 @@ footer p {
     }
 
     .content .gifs {
-        z-index: 1000;
+        z-index: 1;
         position: relative;
         padding: 5vh 40px;
     }
@@ -474,4 +484,21 @@ footer p {
         font-size: 8px;
     }
 }
+
+@media (max-width:850px) and (min-width: 451px) {
+    .sec {
+        padding: 0;
+        margin: 0;
+    }
+    .profilePic img {
+        margin-top: 5vh;
+        border-radius: 100px 20px 100px 20px;
+        width: 350px;
+        height: 420px;
+    }
+    .background p {
+        margin-top: 1vh;
+    }
+}
+
 
