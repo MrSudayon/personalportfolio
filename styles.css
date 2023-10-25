@@ -295,6 +295,8 @@ section img {
 }
 
 .gifs {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     height: 100%;
     background-color: rgb(43, 43, 43);
@@ -349,7 +351,7 @@ footer {
 footer p {
     color: white;
 }
-@media (max-width:450px) and (min-width: 250px){
+@media (max-width:550px) and (min-width: 250px){
     header {
         padding: 2vh 0;
     }
@@ -485,7 +487,7 @@ footer p {
     }
 }
 
-@media (max-width:850px) and (min-width: 451px) {
+@media (max-width:850px) and (min-width: 551px) {
     .sec {
         padding: 0;
         margin: 0;
