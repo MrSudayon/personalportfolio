@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script defer src="app.js"></script>
+    
     <title>Fernando Sudayon - Developer</title>
 </head>
 <body>
@@ -54,20 +55,33 @@
             <h1 class="hidden">Graphic Works</h1>
             <div class="graphics">
                 <div class="graphic hidden">
-                    <img src="assets/graphics/1.png"></img>
+                    <img src="assets/graphics/1.png" onclick="onClick(this)"></img>
                 </div>
                 <div class="graphic hidden">
-                    <img src="assets/graphics/2.png"></img>
+                    <img src="assets/graphics/2.png" onclick="onClick(this)"></img>
                 </div>
                 <div class="graphic hidden">
-                    <img src="assets/graphics/3.png"></img>
+                    <img src="assets/graphics/3.png" onclick="onClick(this)"></img>
                 </div>
                 <div class="graphic hidden">
-                    <img src="assets/graphics/4.png"></img>
+                    <img src="assets/graphics/4.png" onclick="onClick(this)"></img>
                 </div>
             </div>
-        </div>
         
+        </div>
+        <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <div class="w3-modal-content w3-animate-zoom">
+                <img id="img01" style="width: 500px;">
+            </div>
+        </div>
+          
+        <script>
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+            }
+        </script>
         <!-- <div class="giff">
             <img src="assets/gifs/gifTrippy.webp" style="width: 650px; height: 650px;"></img>
         </div> -->
@@ -153,7 +167,8 @@
 
 
         <footer>
-            <p>Copyright © 2023 - All rights reserved by <strong>Fernando Sudayon</strong></p>
+            <!-- <p>Copyright © 2023 - All rights reserved by <strong>Fernando Sudayon</strong></p> -->
+            <p>© 2023 <strong>Fernando Sudayon</strong> All Rights Reserved.</p>
         </footer>
     </div>
 

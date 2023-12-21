@@ -131,16 +131,16 @@ section img {
 }
 
 .graphic img {
-    width: 400px;
-    height: 400px;
+    width: 280px;
+    height: 280px;
     object-fit: cover;
-    margin: 10px;
+    margin: 5px;
     border: 1px solid;
     border-radius: 50px;
     box-shadow: 5px 10px rgba(49, 49, 49, 0.4);
     
     transition: .5s;
-    transform: scale(.9);
+    transform: scale(.95);
     filter: grayscale(1);
     cursor: pointer;
 }
@@ -502,7 +502,7 @@ footer p {
     .giff2 {
         top: 43%;
         left: 80%;   
-        z-index: 99999;
+        z-index: 9999;
     }
 
     .content .gifs {
@@ -513,6 +513,10 @@ footer p {
     footer {
         font-size: 8px;
     }
+
+    /* W3 css Responsive */
+    .w3-modal-content { width:600px } .w3-modal{ padding-top:50px; } .w3-button{width:100%; } 
+    .w3-modal-content{ margin:0 10px;width:auto!important }.w3-modal{padding-top:30px}
 }
 
 @media (max-width:850px) and (min-width: 551px) {
@@ -529,6 +533,38 @@ footer p {
     .background p {
         margin-top: 1vh;
     }
+
+    /* W3 css Responsive */
+    .w3-modal-content { height: 100%;}
 }
+
+/* From w3school css (separated since there's an id/class name conflict with my own css */
+.w3-modal { padding-top:30px; }
+.w3-modal{ z-index:99999;display:none;padding-top:20px;position:absolute;left:0;top:0;width:100%;height:100%;overflow:hidden;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.6)}
+
+.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:white;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap;}
+.w3-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.w3-button:disabled{cursor:not-allowed;opacity:0.3}
+.w3-button{width:100%;text-align:center;padding:8px 16px}
+.w3-button{white-space:normal; transition: .3s;}
+.w3-button:hover{color:#000!important;background-color:#ccc!important}
+
+.w3-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.w3-xlarge{font-size:24px!important}
+.w3-display-topright{position:relative;right:0;top:0; width: 50px;}
+
+.w3-modal-content{ margin:auto;background-color:transparent;position:relative;padding:20px 40px;outline:0; overflow-y: hidden; display: flex; justify-content: center; }
+.w3-modal-content { margin:0 10px;width:auto!important }
+/* 
+@media (max-width:550px) { 
+    .w3-modal-content { width:500px } .w3-modal{padding-top:50px; } .w3-button{width:100%} 
+    .w3-modal-content{ margin:0 10px;width:auto!important}.w3-modal{padding-top:30px}
+}
+@media (min-width:850px) { .w3-modal-content { height: 100vh;}} */
+
+.w3-animate-zoom {animation: animatezoom 0.6s;}
+@keyframes animatezoom { from{transform:scale(0)} to{transform:scale(1); }}
+
+
 
 
