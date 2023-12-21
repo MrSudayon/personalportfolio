@@ -124,6 +124,32 @@ section img {
 
 
 /** CONTENT SECTION STARTS HERE */
+.graphics {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.graphic img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 50px;
+    box-shadow: 5px 10px rgba(49, 49, 49, 0.4);
+    
+    transition: .5s;
+    transform: scale(.9);
+    filter: grayscale(1);
+    cursor: pointer;
+}
+.graphic img:hover {
+    box-shadow: 5px 10px rgba(49, 49, 49, 1);
+    filter: grayscale(0);
+    transform: scale(1);
+}
+
 .hidden {
     opacity: 0;
     transition: all 1s;
@@ -196,9 +222,11 @@ section img {
 .social {
     margin: 0 5vh;
     transition: .5s;
+    transform: scale(.9);
     filter: grayscale(1);
 }
 .social:hover {
+    transform: scale(1);
     filter: grayscale(0);
 }
 
